@@ -10,6 +10,7 @@ interface IProps {
 const ModalHead: FC<IProps> = props => {
   const { onClose } = props;
 
+  // Renders
   return (
     <div className="flex items-center justify-between p-4 gap-4">
       <IconButton onClick={onClose} icon={<CloseIcon />} />

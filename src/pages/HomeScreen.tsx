@@ -26,9 +26,7 @@ const HomeScreen = () => {
         </div>
       </div>
 
-      <Modal open={open} onClose={handleCloseModal}>
-        Bega
-      </Modal>
+      <Modal open={open} onClose={handleCloseModal} />
     </main>
   );
 };

@@ -10,6 +10,7 @@ interface IProps {
 const Button: FC<IProps> = props => {
   const { children, onClick, className } = props;
 
+  // Renders
   return (
     <button
       className={clsx(

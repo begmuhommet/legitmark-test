@@ -5,6 +5,7 @@ import MinusIcon from '../icons/MinusIcon';
 import PlusIcon from '../icons/PlustIcon';
 
 const ModalFooter = () => {
+  // Renders
   return (
     <div className="flex items-center justify-between p-4">
       <div className="flex items-center gap-5">

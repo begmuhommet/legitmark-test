@@ -7,10 +7,12 @@ interface IProps {
 }
 
 const Overlay: FC<IProps> = props => {
-  const { open, onClose } = props;
+  const { open } = props;
 
+  // Variables
   const openClass = [open ? 'visible opacity-100' : 'invisible opacity-0'];
 
+  // Renders
   return (
     <div
       className={clsx(

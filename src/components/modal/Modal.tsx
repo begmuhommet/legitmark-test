@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import ImageLayout from './ImageLayout';
 import ModalFooter from './ModalFooter';
 import ModalHead from './ModalHead';
@@ -8,7 +8,6 @@ import Overlay from './Overlay';
 interface IProps {
   open: boolean;
   onClose: () => void;
-  children: ReactNode;
 }
 
 const Modal: FC<IProps> = props => {
