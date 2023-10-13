@@ -20,7 +20,7 @@ const RootLayout: FC<IProps> = props => {
 
   return (
     <html lang="en">
-      <body className={clsx('w-screen h-screen overflow-y-auto', inter.className)}>{children}</body>
+      <body className={clsx('w-screen h-screen', inter.className)}>{children}</body>
     </html>
   );
 };

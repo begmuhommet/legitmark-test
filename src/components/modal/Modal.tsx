@@ -18,11 +18,11 @@ const Modal: FC<IProps> = props => {
 
   // Renders
   return (
-    <>
+    <div className={clsx('absolute max-w-screen max-h-screen w-full h-full overflow-y-auto', openClass)}>
       <Overlay open={open} />
       <div
         className={clsx(
-          'z-20 transition-opacity bg-opacity-80 duration-500 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2 sm:p-4 overflow-auto',
+          'z-20 transition-opacity bg-opacity-80 duration-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:-translate-y-1/2 p-2 sm:p-4',
           openClass,
         )}
       >
@@ -32,7 +32,7 @@ const Modal: FC<IProps> = props => {
           <ModalFooter />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
