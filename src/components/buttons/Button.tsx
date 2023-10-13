@@ -3,9 +3,6 @@ import { FC, ReactNode } from 'react';
 
 interface IProps {
   children: ReactNode;
-  // variant: 'outlined' | 'contained' | 'text';
-  // size: 'small' | 'medium' | 'large';
-  // color: 'primary' | 'secondary' | 'tertirary';
   onClick?: () => void;
   className?: string;
 }
